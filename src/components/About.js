@@ -1,4 +1,5 @@
 import React,{useState} from 'react';
+import {Link} from "react-router-dom";
 
 
 function About() {
@@ -26,21 +27,21 @@ function About() {
     <>
     <div className='container my-5' style={mystate}>
        <nav id="navbar-example2" className="navbar navbar-dark bg-dark px-3">
-  <a className="navbar-brand" href="/"></a>
+  <Link className="navbar-brand" href="/"></Link>
   <ul className="nav nav-pills">
     <li className="nav-item">
-      <a className="nav-link" href="#scrollspyHeading1">First</a>
+      <Link className="nav-link" href="#scrollspyHeading1">First</Link>
     </li>
     <li className="nav-item">
-      <a className="nav-link" href="#scrollspyHeading2">Second</a>
+      <Link className="nav-link" href="#scrollspyHeading2">Second</Link>
     </li>
     <li className="nav-item dropdown">
-      <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="/" role="button" aria-expanded="false">Dropdown</a>
+      <Link className="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="/" role="button" aria-expanded="false">Dropdown</Link>
       <ul className="dropdown-menu">
-        <li><a className="dropdown-item" href="#scrollspyHeading3">Third</a></li>
-        <li><a className="dropdown-item" href="#scrollspyHeading4">Fourth</a></li>
+        <li><Link className="dropdown-item" href="#scrollspyHeading3">Third</Link></li>
+        <li><Link className="dropdown-item" href="#scrollspyHeading4">Fourth</Link></li>
         <li><hr className="dropdown-divider"/></li>
-        <li><a className="dropdown-item" href="#scrollspyHeading5">Fifth</a></li>
+        <li><Link className="dropdown-item" href="#scrollspyHeading5">Fifth</Link></li>
       </ul>
     </li>
   </ul>
